@@ -104,7 +104,7 @@ export default function ReservationForm({ tables, reservations, isTerraceClosed,
 
   return (
     <div style={styles.backdrop}>
-      <div className="glass-panel" style={styles.modal} className="glass-panel fade-in">
+      <div style={styles.modal} className="glass-panel fade-in">
         <div style={styles.modalHeader}>
           <h2 style={styles.modalTitle}>Nueva Reservación</h2>
           <button style={styles.closeBtn} onClick={onCancel}>✕</button>
