@@ -60,7 +60,7 @@ export default function TableLayout({ tables, reservations, isTerraceClosed, onT
                   ? 'var(--color-occupied-bg)' 
                   : table.status === 'reservada' 
                     ? 'var(--color-reserved-bg)' 
-                    : 'rgba(255, 255, 255, 0.02)',
+                    : 'var(--color-free-bg)',
               borderColor: isDisabled 
                 ? 'var(--text-muted)' 
                 : table.status === 'ocupada' 
@@ -193,7 +193,8 @@ const styles = {
   },
   legendTitle: {
     fontSize: '0.95rem',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
+    fontWeight: '600',
   },
   legendItems: {
     display: 'flex',
@@ -221,7 +222,8 @@ const styles = {
   },
   zoneTitle: {
     fontSize: '1.2rem',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
+    fontWeight: '700',
   },
   zoneDesc: {
     fontSize: '0.8rem',
@@ -250,7 +252,7 @@ const styles = {
   tableName: {
     fontSize: '0.95rem',
     fontWeight: '600',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   tableShapeContainer: {
     display: 'flex',
@@ -299,7 +301,7 @@ const styles = {
   clientName: {
     fontSize: '0.85rem',
     fontWeight: '600',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -327,13 +329,13 @@ const styles = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(9, 13, 22, 0.75)',
+    backgroundColor: 'rgba(242, 247, 244, 0.88)',
     borderRadius: '16px',
     zIndex: 10,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backdropFilter: 'blur(3px)',
+    backdropFilter: 'blur(6px)',
   },
   overlayCard: {
     display: 'flex',
@@ -343,8 +345,8 @@ const styles = {
     padding: '1.5rem',
     maxWidth: '280px',
     gap: '0.5rem',
-    border: '1px solid rgba(244, 63, 94, 0.3)',
-    backgroundColor: 'rgba(18, 25, 38, 0.9)',
+    border: '1px solid rgba(211, 47, 47, 0.25)',
+    backgroundColor: 'rgba(255, 255, 255, 0.95)',
   },
   overlayIcon: {
     fontSize: '2rem',

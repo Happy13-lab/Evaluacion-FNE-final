@@ -191,7 +191,7 @@ const styles = {
   metricValue: {
     fontSize: '2.5rem',
     fontWeight: '700',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
     fontFamily: 'var(--font-title)',
   },
   metricSub: {
@@ -200,7 +200,7 @@ const styles = {
   },
   progressBarBg: {
     height: '6px',
-    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    backgroundColor: 'rgba(0, 0, 0, 0.05)',
     borderRadius: '3px',
     marginTop: '0.5rem',
     overflow: 'hidden',
@@ -272,7 +272,7 @@ const styles = {
   },
   sectionTitle: {
     fontSize: '1.1rem',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   linkBtn: {
     background: 'none',
@@ -297,8 +297,8 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     padding: '0.75rem 1rem',
-    backgroundColor: 'rgba(255, 255, 255, 0.02)',
-    border: '1px solid rgba(255, 255, 255, 0.04)',
+    backgroundColor: 'rgba(46, 125, 50, 0.02)',
+    border: '1px solid rgba(46, 125, 50, 0.08)',
     borderRadius: '8px',
     gap: '1rem',
   },
@@ -307,7 +307,7 @@ const styles = {
     fontWeight: '700',
     color: 'var(--primary)',
     fontFamily: 'var(--font-title)',
-    backgroundColor: 'rgba(205, 162, 107, 0.08)',
+    backgroundColor: 'rgba(46, 125, 50, 0.08)',
     padding: '0.25rem 0.5rem',
     borderRadius: '6px',
     minWidth: '65px',
@@ -319,7 +319,7 @@ const styles = {
   clientName: {
     fontSize: '0.9rem',
     fontWeight: '600',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   clientMeta: {
     fontSize: '0.75rem',
@@ -348,7 +348,7 @@ const styles = {
   },
   statusCount: {
     fontWeight: '600',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
   },
   divider: {
     height: '1px',

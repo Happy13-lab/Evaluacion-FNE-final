@@ -5,9 +5,7 @@ export default function Header({ currentView, onViewChange, isTerraceClosed, onT
     <header style={styles.header} className="glass-panel">
       <div style={styles.brand}>
         <div style={styles.logoRing}>
-          <svg style={styles.logoSvg} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="var(--primary)"/>
-          </svg>
+          <img src="/logo.png" alt="Bistro Fusión Logo" style={styles.logoImg} />
         </div>
         <div>
           <h1 style={styles.title}>BISTRO FUSIÓN</h1>
@@ -78,19 +76,19 @@ const styles = {
     width: '42px',
     height: '42px',
     borderRadius: '10px',
-    backgroundColor: 'rgba(205, 162, 107, 0.1)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    border: '1px solid rgba(205, 162, 107, 0.3)',
+    overflow: 'hidden',
   },
-  logoSvg: {
-    width: '24px',
-    height: '24px',
+  logoImg: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
   },
   title: {
     fontSize: '1.25rem',
-    color: '#ffffff',
+    color: 'var(--text-primary)',
     letterSpacing: '0.1em',
     fontWeight: '700',
   },
@@ -134,8 +132,8 @@ const styles = {
     fontWeight: '500',
   },
   toggleWeatherBtn: {
-    background: 'rgba(205, 162, 107, 0.1)',
-    border: '1px solid rgba(205, 162, 107, 0.2)',
+    background: 'rgba(46, 125, 50, 0.1)',
+    border: '1px solid rgba(46, 125, 50, 0.2)',
     color: 'var(--primary)',
     borderRadius: '6px',
     padding: '0.25rem 0.5rem',
