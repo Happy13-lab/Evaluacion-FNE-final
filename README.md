@@ -26,7 +26,7 @@ Desarrollar una interfaz digital tipo Panel de Control interactivo que unifique 
 
 ## 2. Funcionalidades Propuestas y Avance
 
-### Funcionalidades Implementadas (Evaluación 3):
+### Funcionalidades Implementadas:
 *   **Dashboard de Métricas:** Visualización en tiempo real de la tasa de ocupación (%), total de reservas activas, cubiertos estimados (comensales) y lista rápida de próximos arribos.
 *   **Mapa Interactivo del Salón (TableLayout):** Representación visual y cromática del estado de las 12 mesas del restaurante (Libre: verde, Reservada: naranja, Ocupada: rojo). Incluye acciones rápidas para registrar clientes ("Sentar") y liberar mesas ("Limpiar").
 *   **Gestor y Buscador de Reservas:** Filtros por estado de reserva (Pendiente, Confirmada, Sentado, Cancelada) y búsqueda por nombre de cliente, correo o teléfono con actualización instantánea.
@@ -36,7 +36,7 @@ Desarrollar una interfaz digital tipo Panel de Control interactivo que unifique 
     *   *Alerta de terraza:* Bloquea e impide reservar mesas exteriores si la terraza está cerrada.
 *   **Simulador de Clima Integrado:** Widget en cabecera que simula clima soleado/lluvioso, inhabilitando visualmente la terraza y alertando si hay reservas activas en riesgo.
 
-### Funcionalidades Futuras (Planificadas para Evaluación 4):
+### Funcionalidades Futuras:
 *   **Persistencia Local (localStorage):** Guardar permanentemente las reservas y estados de mesa para evitar pérdidas de información al refrescar la página.
 *   **Operaciones CRUD Completas:** Habilitar la edición de datos de reservas existentes y eliminación lógica (borrado).
 *   **Integración con API del Clima Externa:** Consumir una API meteorológica pública (ej. OpenWeatherMap) mediante fetch/axios para bloquear la terraza de forma automatizada según el pronóstico real de Santiago.
